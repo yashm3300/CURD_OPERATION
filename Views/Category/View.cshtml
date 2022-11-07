@@ -1,0 +1,22 @@
+﻿@model CategoryMaster.Models.UpdateCategoryViewModel
+@{
+}
+<h1>Edit Category</h1>
+<form method="post" action="view" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="" form-lable">Category ID</label>
+        <input type="text" class="form-control" asp-for="CategoryId"readonly>
+    </div>
+    <div class="mb-3">
+        <label for="" class="" form-lable">Category Name</label>
+        <input type="text" class="form-control" asp-for="CategoryName">
+    </div>
+    <div class="mb-3">
+        <label for="" class="" form-lable">Category Description</label>
+        <input type="text" class="form-control" asp-for="Description">
+    </div>
+    <button type="submit" class="btn btn-primary" asp-action="">submit</button>
+    <button type="submit" class="btn btn-danger"
+    asp-action="Delete"
+            asp-controller="Categorys">Delete</button>
+</form>
